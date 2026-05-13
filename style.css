@@ -1,0 +1,116 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #001122, #eeea76);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  background: #1b1a1a;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Heading */
+.container h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #f6f4f4;
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #fffdfd;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #e3e775;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Button */
+button {
+  margin-top: 25px;
+  padding: 12px;
+  width: 100%;
+  background: #716f02;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+  background: #4d4901;
+  transform: scale(1.03);
+}
+
+/* Error messages */
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+  display: block;
+  text-align: left;
+}
+.container {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.icon {
+  font-size: 70px;   /* increase/decrease */
+  margin-right: 8px;
+  vertical-align: middle;
+}
+/* Result text */
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f3f3f3;
+}
