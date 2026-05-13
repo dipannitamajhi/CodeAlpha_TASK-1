@@ -6,7 +6,7 @@ function calculateAge() {
     let dobError = document.getElementById("dobError");
     let result = document.getElementById("result");
 
-    // Clear previous messages
+    
     nameError.innerText = "";
     dobError.innerText = "";
     result.innerText = "";
@@ -16,19 +16,19 @@ function calculateAge() {
 
     let hasError = false;
 
-    // Name validation
+    
     if (name === "") {
     nameError.innerText = "Please enter your name";
     hasError = true;
 }
 
-    // DOB validation
+    
     if (dob === "") {
         dobError.innerText = "Please select your date of birth";
         hasError = true;
     }
 
-    // Stop if error
+    
     if (hasError) return;
 
     let birthDate = new Date(dob);
@@ -39,7 +39,7 @@ function calculateAge() {
         return;
     }
 
-    // Age calculation
+    
     let years = today.getFullYear() - birthDate.getFullYear();
     let months = today.getMonth() - birthDate.getMonth();
     let days = today.getDate() - birthDate.getDate();
@@ -55,7 +55,7 @@ function calculateAge() {
         months += 12;
     }
     
-    // Capitalize name
+   
     name = name.charAt(0).toUpperCase() + name.slice(1);
 
     result.innerText = `  Dear ${name}, your age is ${years} Years, ${months} Months, ${days} Days`;
