@@ -1,11 +1,11 @@
-/* Reset default spacing */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #001122, #eeea76);
@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 
-/* Main container */
+
 .container {
   background: #1b1a1a;
   padding: 40px 50px;
@@ -26,14 +26,13 @@ body {
   text-align: center;
 }
 
-/* Heading */
+
 .container h1 {
   margin-bottom: 25px;
   font-size: 28px;
   color: #f6f4f4;
 }
 
-/* Labels */
 label {
   display: block;
   text-align: left;
@@ -43,7 +42,6 @@ label {
   color: #fffdfd;
 }
 
-/* Inputs */
 input {
   width: 100%;
   padding: 12px;
@@ -54,13 +52,11 @@ input {
   transition: 0.3s;
 }
 
-/* Input focus effect */
 input:focus {
   border-color: #e3e775;
   box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
 }
 
-/* Button */
 button {
   margin-top: 25px;
   padding: 12px;
@@ -74,13 +70,11 @@ button {
   transition: 0.3s;
 }
 
-/* Button hover */
 button:hover {
   background: #4d4901;
   transform: scale(1.03);
 }
 
-/* Error messages */
 .error {
   color: red;
   font-size: 13px;
@@ -103,11 +97,11 @@ button:hover {
   }
 }
 .icon {
-  font-size: 70px;   /* increase/decrease */
+  font-size: 70px;  
   margin-right: 8px;
   vertical-align: middle;
 }
-/* Result text */
+
 #result {
   margin-top: 20px;
   font-size: 18px;
